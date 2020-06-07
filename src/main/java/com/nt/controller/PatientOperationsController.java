@@ -32,7 +32,7 @@ public class PatientOperationsController {
 
 	@GetMapping("corona.htm")
 	public String showForm(@ModelAttribute("patCmd")PatientCommand cmd) {
-		System.out.println("Inside PatientOperationsController.showForm()");
+		System.out.println("PatientOperationsController.showForm()");
 
 		//setting default values to Command class
 		cmd.setAge(null);
@@ -45,7 +45,7 @@ public class PatientOperationsController {
 	public String processForm(Map<String, Object> map,
 			@Valid @ModelAttribute("patCmd")PatientCommand cmd,BindingResult br) {
 
-		System.out.println("Inside PatientOperationsController.processForm()");
+		System.out.println("PatientOperationsController.processForm()");
 		PatientDTO dto=null;
 		String result=null;
 		if(br.hasErrors()) {
