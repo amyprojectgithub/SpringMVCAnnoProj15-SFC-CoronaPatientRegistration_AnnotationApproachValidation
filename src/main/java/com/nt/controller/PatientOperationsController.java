@@ -32,7 +32,7 @@ public class PatientOperationsController {
 
 	@GetMapping("corona.htm")
 	public String showForm(@ModelAttribute("patCmd")PatientCommand cmd) {
-		System.out.println("PatientOperationsController.showForm()");
+		System.out.println("Inside PatientOperationsController.showForm()");
 
 		//setting default values to Command class
 		cmd.setAge(null);
