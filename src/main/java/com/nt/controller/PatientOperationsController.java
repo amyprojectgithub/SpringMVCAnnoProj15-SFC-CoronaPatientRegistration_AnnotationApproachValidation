@@ -26,7 +26,7 @@ public class PatientOperationsController {
 
 	@ModelAttribute("patCmd")
 	public PatientCommand getPatientCommand() {
-		System.out.println("PatientOperationsController.getPatientCommand()");
+		System.out.println(" Inside PatientOperationsController.getPatientCommand()");
 		return new PatientCommand();
 	}
 
