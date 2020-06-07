@@ -65,7 +65,6 @@ public class PatientOperationsController {
 		result=service.register(dto);
 		//make result as model attribute
 		map.put("result", result);
-		System.out.println("Returning to show_result.jsp");
 		//return lvn		
 		return "show_result";
 	}
