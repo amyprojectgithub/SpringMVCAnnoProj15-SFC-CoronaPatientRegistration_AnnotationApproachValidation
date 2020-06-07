@@ -45,7 +45,7 @@ public class PatientOperationsController {
 	public String processForm(Map<String, Object> map,
 			@Valid @ModelAttribute("patCmd")PatientCommand cmd,BindingResult br) {
 
-		System.out.println("PatientOperationsController.processForm()");
+		System.out.println("Inside PatientOperationsController.processForm()");
 		PatientDTO dto=null;
 		String result=null;
 		if(br.hasErrors()) {
